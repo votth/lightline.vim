@@ -1,92 +1,32 @@
-# lightline.vim
-A light and configurable statusline/tabline plugin for Vim
+# Forked from [lightline.vim](https://github.com/itchyny/lightline.vim)
 
-https://github.com/itchyny/lightline.vim
 
-### powerline (default)
+# Differences from the original
 
-![lightline.vim - powerline](https://raw.githubusercontent.com/wiki/itchyny/lightline.vim/image/powerline.png)
+- Stripped off unwanted color themes
+- Added my own theme - "nasaKAT"
+- Edited mainly the following files:
+    - autoload/lightline.vim
+    - autoload/lightline/colorscheme/nasaKAT.vim
 
-### wombat
 
-![lightline.vim - wombat](https://raw.githubusercontent.com/wiki/itchyny/lightline.vim/image/wombat.png)
+# Installation
 
-### solarized (`background=dark`)
+Only tested and used with [vim-plug](https://github.com/junegunn/vim-plug) so far
 
-![lightline.vim - solarized_dark](https://raw.githubusercontent.com/wiki/itchyny/lightline.vim/image/solarized_dark.png)
-
-### solarized (`background=light`)
-
-![lightline.vim - solarized_light](https://raw.githubusercontent.com/wiki/itchyny/lightline.vim/image/solarized_light.png)
-
-### PaperColor (`background=dark`)
-
-![lightline.vim - PaperColor_dark](https://raw.githubusercontent.com/wiki/itchyny/lightline.vim/image/PaperColor_dark.png)
-
-### PaperColor (`background=light`)
-
-![lightline.vim - PaperColor_light](https://raw.githubusercontent.com/wiki/itchyny/lightline.vim/image/PaperColor_light.png)
-
-### one (`background=dark`)
-
-![lightline.vim - one_dark](https://raw.githubusercontent.com/wiki/itchyny/lightline.vim/image/one_dark.png)
-
-### one (`background=light`)
-
-![lightline.vim - one_light](https://raw.githubusercontent.com/wiki/itchyny/lightline.vim/image/one_light.png)
-
-For screenshots of all available colorshemes, see [this file](colorscheme.md).
-
-## Why yet another clone of powerline?
-+ [vim-powerline](https://github.com/Lokaltog/vim-powerline) is a nice plugin, but deprecated.
-+ [powerline](https://github.com/powerline/powerline) is a nice plugin, but difficult to configure.
-+ [vim-airline](https://github.com/vim-airline/vim-airline) is a nice plugin, but it uses too many functions of other plugins, which should be done by users in `.vimrc`.
-
-## Spirit of this plugin
-+ Minimalism. The core script is very small to achieve enough functions as a statusline plugin.
-+ Configurability. You can create your own component and easily add to the statusline and the tabline.
-+ Orthogonality. The plugin does not rely on the implementation of other plugins. Such plugin crossing settings should be configured by users.
-
-## Installation
-### [Vim packages](https://vimhelp.org/repeat.txt.html#packages) (since Vim 7.4.1528)
-1. Clone the plugin with the following command.
-
-        git clone https://github.com/itchyny/lightline.vim ~/.vim/pack/plugins/start/lightline
-
-### [Pathogen](https://github.com/tpope/vim-pathogen)
-1. Install with the following command.
-
-        git clone https://github.com/itchyny/lightline.vim ~/.vim/bundle/lightline.vim
-
-2. Generate help tags with `:Helptags`.
-
-### [Vundle](https://github.com/VundleVim/Vundle.vim)
-1. Add the following configuration to your `.vimrc`.
-
-        Plugin 'itchyny/lightline.vim'
-
-2. Install with `:PluginInstall`.
-
-### [NeoBundle](https://github.com/Shougo/neobundle.vim)
-1. Add the following configuration to your `.vimrc`.
-
-        NeoBundle 'itchyny/lightline.vim'
-
-2. Install with `:NeoBundleInstall`.
-
-### [vim-plug](https://github.com/junegunn/vim-plug)
 1. Add the following configuration to your `.vimrc`.
 
         Plug 'itchyny/lightline.vim'
 
 2. Install with `:PlugInstall`.
 
-### [dein.vim](https://github.com/Shougo/dein.vim)
-1. Add the following configuration to your `.vimrc`.
 
-        call dein#add('itchyny/lightline.vim')
+# Post-installation - WIP
 
-2. Install with `:call dein#install()`
+Changes to `.vimrc` and `.bashrc`: \<WIP\>
+
+
+# Notes Retained From The Author - [itchyny](https://github.com/itchyny)
 
 ## Introduction
 After installing this plugin, you restart the editor and will get a cool statusline.
@@ -425,9 +365,3 @@ Firstly, give the users a clue to judge which buffer is the one your plugin crea
 The filename is a manner and the filetype is another.
 Then, export a function which is useful to be shown in the statusline.
 Lastly, for advanced users, set important information in buffer variables so that the users can obtain the condition of the plugin easily.
-
-## Author
-itchyny (https://github.com/itchyny)
-
-## License
-This software is released under the MIT License, see LICENSE.
