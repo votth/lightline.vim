@@ -20,9 +20,9 @@ let s:p.normal.left   = [ [ s:black, s:beige ], [ s:grey, s:darkGrey ] ]
 let s:p.normal.middle = [ [ s:beige, s:almostBlack ] ]
 let s:p.normal.right  = [ [ s:black, s:grey ], [ s:beige, s:darkGrey ], [ s:grey, s:almostBlack ] ]
 
-let s:p.inactive.left   =  [  [ s:grey, s:darkGrey ] ]
+let s:p.inactive.left   =  [  [ s:beige, s:darkGrey ] ]
 let s:p.inactive.middle = [ [ s:grey, s:darkGrey ] ]
-let s:p.inactive.right  = [ [ s:beige, s:darkGrey ] ]
+let s:p.inactive.right  = [ [ s:darkGrey, s:beige ] ]
 
 let s:p.command.left  = [ [ s:black, s:green ], [ s:grey, s:darkGrey ] ]
 let s:p.insert.left   = [ [ s:black, s:blue ], [ s:grey, s:darkGrey ] ]
